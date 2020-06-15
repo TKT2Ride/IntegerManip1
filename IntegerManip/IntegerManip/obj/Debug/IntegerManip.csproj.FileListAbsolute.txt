@@ -1,0 +1,7 @@
+C:\Users\Tyler\source\repos\IntegerManip\IntegerManip\obj\Debug\IntegerManip.csprojAssemblyReference.cache
+C:\Users\Tyler\source\repos\IntegerManip\IntegerManip\obj\Debug\IntegerManip.csproj.CoreCompileInputs.cache
+C:\Users\Tyler\source\repos\IntegerManip\IntegerManip\bin\Debug\IntegerManip.exe.config
+C:\Users\Tyler\source\repos\IntegerManip\IntegerManip\bin\Debug\IntegerManip.exe
+C:\Users\Tyler\source\repos\IntegerManip\IntegerManip\bin\Debug\IntegerManip.pdb
+C:\Users\Tyler\source\repos\IntegerManip\IntegerManip\obj\Debug\IntegerManip.exe
+C:\Users\Tyler\source\repos\IntegerManip\IntegerManip\obj\Debug\IntegerManip.pdb
