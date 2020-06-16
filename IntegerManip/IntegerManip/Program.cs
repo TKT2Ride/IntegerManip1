@@ -19,7 +19,10 @@ namespace IntegerManip
         //• Quit
         static void Main(string[] args)
         {
+            while (true)
+            {
 
+            }
         }
     }
 }
