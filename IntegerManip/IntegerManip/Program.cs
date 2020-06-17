@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,6 +21,34 @@ namespace IntegerManip
         static void Main(string[] args)
         {
 
+        }
+        public static void sum (IList<int> AL) {
+            int g = 0;
+            for(int i=0; i < AL.Count; i++)
+            {
+                 g+= AL[i];
+            }
+            Console.Write("The Sum Is "+g);
+            Console.ReadLine();
+        }
+        public static void display(IList<int> AL)
+        {
+            for (int i=0; i<AL.Count; i++)
+            {
+                Console.Write(AL[i]);
+                Console.ReadLine();
+            }
+        }
+        public static void divisibleByThree(IList<int> AL)
+        {
+            for (int i = 0; i < AL.Count; i++)
+            {
+                if ((AL[i]%3)==0)
+                {
+                    Console.Write(AL[i]);
+                    Console.ReadLine();
+                }
+            }
         }
     }
 }
