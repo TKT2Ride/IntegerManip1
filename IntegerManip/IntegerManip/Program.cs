@@ -21,7 +21,7 @@ namespace IntegerManip
         //• Quit
         static void Main(string[] args)
         {
-            Console.WriteLine("How many numbers would you like to enter (max. 20):";
+            Console.WriteLine("How many numbers would you like to enter (max. 20):");
             int num = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter " + num + " numbers:");
             ArrayList myArrayList = new ArrayList();
@@ -36,30 +36,30 @@ namespace IntegerManip
 
             }
         }
-        public static void sum (IList<int> AL) {
+        public static void sum (ArrayList AL) {
             int g = 0;
-            for(int i=0; i < AL.Count; i++)
+            foreach (int i in AL)
             {
-                 g+= AL[i];
+                 g+=i;
             }
             Console.Write("The Sum Is "+g);
             Console.ReadLine();
         }
-        public static void display(IList<int> AL)
+        public static void display(ArrayList AL)
         {
-            for (int i=0; i<AL.Count; i++)
+            foreach (int i in AL)
             {
-                Console.Write(AL[i]);
+                Console.Write(i);
                 Console.ReadLine();
             }
         }
         public static void divisibleByThree(IList<int> AL)
         {
-            for (int i = 0; i < AL.Count; i++)
+            foreach (int i in AL)
             {
-                if ((AL[i]%3)==0)
+                if ((i%3)==0)
                 {
-                    Console.Write(AL[i]);
+                    Console.Write(i);
                     Console.ReadLine();
                 }
             }
