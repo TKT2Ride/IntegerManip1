@@ -67,8 +67,10 @@ namespace IntegerManip
 
             }
         }
+
         public static void display(ArrayList AL)
         {
+
             foreach (int i in AL)
             {
                 Console.WriteLine(i);
@@ -117,6 +119,26 @@ namespace IntegerManip
                 }
                 Console.WriteLine();
             }
+        }
+
+          public static void everyFifth (ArrayList AL)
+        {
+            foreach (int i in AL)
+            {
+                int num = AL.IndexOf(i);
+                if (num == 4 || num == 9 || num == 14 || num == 19 )
+                {
+                    Console.Write(i);
+                    Console.Read();
+                }
+            }
+           
+        }
+          
+        public static void quit()
+        {
+            Console.Write("Program has ended");
+            Console.Read();
         }
     }
 }
