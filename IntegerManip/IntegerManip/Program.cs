@@ -33,6 +33,37 @@ namespace IntegerManip
 
             while (true)
             {
+                Console.WriteLine("1: Display the whole list of input");
+                Console.WriteLine("2: Display every even number");
+                Console.WriteLine("3: Display every odd number");
+                Console.WriteLine("4: Display every 5th number");
+                Console.WriteLine("5: Display the sum of the integers");
+                Console.WriteLine("6: Display every number divisible by 3");
+                Console.WriteLine("7: Quit");
+                int choice = Convert.ToInt32(Console.ReadLine());
+
+                if (choice == 7)
+                {
+                    break;
+                } else if (choice == 1)
+                {
+                    display(myArrayList);
+                } else if (choice == 2)
+                {
+                    displayEven(myArrayList);
+                } else if (choice == 3)
+                {
+                    displayOdd(myArrayList);
+                } else if (choice == 4)
+                {
+                    //
+                } else if (choice == 5)
+                {
+                    sum(myArrayList);
+                } else if (choice == 6)
+                {
+                    divisibleByThree(myArrayList);
+                }
 
             }
         }
@@ -40,9 +71,9 @@ namespace IntegerManip
         {
             foreach (int i in AL)
             {
-                Console.Write(i);
-                Console.ReadLine();
+                Console.WriteLine(i);
             }
+            Console.WriteLine();
         }
         public static void displayEven(ArrayList AL)
         {
@@ -50,9 +81,9 @@ namespace IntegerManip
             {
                 if ((i % 2) == 0)
                 {
-                    Console.Write(i);
-                    Console.ReadLine();
+                    Console.WriteLine(i);
                 }
+                Console.WriteLine();
             }
         }
         public static void displayOdd(ArrayList AL)
@@ -62,8 +93,8 @@ namespace IntegerManip
                 if (!((i % 2) == 0))
                 {
                     Console.Write(i);
-                    Console.ReadLine();
                 }
+                Console.WriteLine();
             }
         }
         public static void sum (ArrayList AL) {
@@ -72,19 +103,19 @@ namespace IntegerManip
             {
                  g+=i;
             }
-            Console.Write("The Sum Is "+g);
-            Console.ReadLine();
+            Console.WriteLine("The Sum Is "+g);
+            Console.WriteLine();
         }
         
-        public static void divisibleByThree(IList<int> AL)
+        public static void divisibleByThree(ArrayList AL)
         {
             foreach (int i in AL)
             {
                 if ((i%3)==0)
                 {
-                    Console.Write(i);
-                    Console.ReadLine();
+                    Console.WriteLine(i);
                 }
+                Console.WriteLine();
             }
         }
     }
