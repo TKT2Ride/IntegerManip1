@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Collections;
 using System.Linq;
@@ -20,7 +21,20 @@ namespace IntegerManip
         //• Quit
         static void Main(string[] args)
         {
+            Console.WriteLine("How many numbers would you like to enter (max. 20):";
+            int num = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter " + num + " numbers:");
+            ArrayList myArrayList = new ArrayList();
+            for (int i = 0; i < num; i++)
+            {
+                int temp = Convert.ToInt32(Console.ReadLine());
+                myArrayList.Add(temp);
+            }
 
+            while (true)
+            {
+
+            }
         }
         public static void sum (IList<int> AL) {
             int g = 0;
