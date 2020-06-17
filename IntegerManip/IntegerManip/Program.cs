@@ -36,6 +36,20 @@ namespace IntegerManip
 
             }
         }
+
+        public static void everyFifth (ArrayList AL)
+        {
+            foreach (int i in AL)
+            {
+                int num = AL.IndexOf(i);
+                if (num == 4 || num == 9 || num == 14 || num == 19 )
+                {
+                    Console.Write(i);
+                    Console.Read();
+                }
+            }
+           
+        }
         public static void sum (ArrayList AL) {
             int g = 0;
             foreach (int i in AL)
@@ -63,6 +77,12 @@ namespace IntegerManip
                     Console.ReadLine();
                 }
             }
+        }
+
+        public static void quit()
+        {
+            Console.Write("Program has ended");
+            Console.Read();
         }
     }
 }
