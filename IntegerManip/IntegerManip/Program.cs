@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Collections;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,7 +21,7 @@ namespace IntegerManip
         //• Quit
         static void Main(string[] args)
         {
-            Console.WriteLine("How many numbers would you like to enter (max. 20):";
+            Console.WriteLine("How many numbers would you like to enter (max. 20):");
             int num = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter " + num + " numbers:");
             ArrayList myArrayList = new ArrayList();
@@ -33,6 +34,34 @@ namespace IntegerManip
             while (true)
             {
 
+            }
+        }
+        public static void sum (ArrayList AL) {
+            int g = 0;
+            foreach (int i in AL)
+            {
+                 g+=i;
+            }
+            Console.Write("The Sum Is "+g);
+            Console.ReadLine();
+        }
+        public static void display(ArrayList AL)
+        {
+            foreach (int i in AL)
+            {
+                Console.Write(i);
+                Console.ReadLine();
+            }
+        }
+        public static void divisibleByThree(IList<int> AL)
+        {
+            foreach (int i in AL)
+            {
+                if ((i%3)==0)
+                {
+                    Console.Write(i);
+                    Console.ReadLine();
+                }
             }
         }
     }
